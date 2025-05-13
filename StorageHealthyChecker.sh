@@ -57,7 +57,6 @@ GeteMMCinfo() {
     echo "OEMID: $oemid"
     echo "版本: $prv"
     echo "生产日期: $date"
-    exit 1
   fi
     date=$(cat /sys/block/mmcblk0/device/date 2>/dev/null)
     chipinfo=$(cat /sys/block/mmcblk0/device/chipinfo 2>/dev/null)

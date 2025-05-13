@@ -1,4 +1,8 @@
 # StorageHealthyChecker
+用于检查 Flash 状态的脚本 </br>
+包括但不限于 Flash 寿命百分比、供应商和型号 </br>
+旨在快速准确地检测隐藏在系统节点中的 Flash 信息 </br>
+基于 @Anran2786 的脚本编写 </br>
 A script for checking Flash status </br> 
 Includes but is not limited to Flash life percentage, vendor and model </br>
 Aims to quickly and accurately detect Flash info hidden in system nodes </br>

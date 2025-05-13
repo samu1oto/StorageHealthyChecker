@@ -60,6 +60,7 @@ GeteMMCinfo() {
     exit 1
   fi
     date=$(cat /sys/block/mmcblk0/device/date 2>/dev/null)
+    chipinfo=$(cat /sys/block/mmcblk0/device/chipinfo 2>/dev/null)
     cid=$(cat "$cidpath")
     echo "CID: $cid"
     mid=${cid:0:2}
@@ -78,7 +79,7 @@ GeteMMCinfo() {
     
     echo "制造商 ID (MID): 0x$mid"
     echo "OEM ID (OID): 0x$oid"
-    echo "产品名称 (PNM): $pnm_ascii"
+    echo "产品名称 (PNM): $pnm_ascii $chipinfo"
     echo "产品版本 (PRV): $prv_major.$prv_minor"
     echo "产品序列号 (PSN): 0x$psn"
     echo "生产日期 (MDT): $date"
